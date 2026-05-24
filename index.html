@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMTA DOĞALGAZ & MÜHENDİSLİK</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6; /* Sektöre uygun hafif yeşilimsi/gri temiz arka plan */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff; /* Tam beyaz kart arka planı */
+            padding: 35px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 150, 136, 0.08); /* Sektörel tonlarda hafif gölge */
+            text-align: center;
+            max-width: 360px;
+            width: 90%;
+            margin: 20px auto;
+            /* Açılış Animasyonu */
+            animation: fadeIn 0.8s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .logo-img {
+            width: 190px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #1e293b; /* Modern Koyu Antrasit */
+            font-size: 22px; 
+            margin-bottom: 6px;
+            font-weight: 800; 
+            letter-spacing: 0.5px;
+            text-transform: uppercase; 
+        }
+        .subtitle {
+            color: #00877a; /* Kurumsal Isı/Doğalgaz Teali */
+            font-size: 14px;
+            margin-bottom: 15px; /* Bayi alanı eklendiği için boşluk biraz kısıldı */
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        /* YENİ: VAILLANT BAYİ ALANI */
+        .dealer-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #f8fafc; /* Çok hafif gri arka plan */
+            border: 1px solid #e2e8f0; /* Zarif çerçeve */
+            padding: 8px 15px;
+            border-radius: 50px; /* Hap şeklinde yuvarlak tasarım */
+            margin-bottom: 25px;
+        }
+        .dealer-logo {
+            height: 20px; /* Vaillant logosunun boyutu */
+            width: auto;
+        }
+        .dealer-text {
+            font-size: 11px;
+            color: #475569;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .section-title {
+            font-size: 12px;
+            color: #94a3b8; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 20px 0 12px;
+            text-align: left;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            font-weight: 700;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 135, 122, 0.15);
+        }
+        .btn:active { transform: scale(0.98); }
+        
+        /* Kurumsal Renk Paleti */
+        .btn-call { background-color: #00877a; color: #ffffff; border: 2px solid #00877a; } 
+        .btn-whatsapp { background-color: #25D366; color: #ffffff; border: 2px solid #25D366; } 
+        .btn-maps { background-color: #ffffff; color: #00877a; border: 2px solid #00877a; } 
+        .btn-web { background-color: #1e293b; color: #ffffff; border: 2px solid #1e293b; } 
+        
+        /* Hover Efektleri */
+        .btn-call:hover { background-color: #007065; border-color: #007065; }
+        .btn-whatsapp:hover { background-color: #1ebe57; border-color: #1ebe57; }
+        .btn-maps:hover { background-color: #f0fdfa; }
+        .btn-web:hover { background-color: #0f172a; border-color: #0f172a; }
+        
+        /* Profesyonel Footer Alanı */
+        .footer-wrapper {
+            margin-top: 30px;
+            border-top: 1px dashed #e2e8f0; 
+            padding-top: 15px;
+        }
+        .legal-footer {
+            font-size: 11px;
+            color: #94a3b8;
+            font-weight: 500;
+            margin-bottom: 3px;
+        }
+        .creator-tag {
+            font-size: 10px; 
+            color: #cbd5e1; 
+            text-decoration: none; 
+            transition: color 0.2s ease; 
+            display: inline-block;
+            font-weight: 400;
+        }
+        .creator-tag span {
+            font-weight: 700; 
+            color: #94a3b8; 
+        }
+        .creator-tag:hover, .creator-tag:hover span {
+            color: #00877a; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="logo.png" alt="EMTA DOĞALGAZ LOGO" class="logo-img">
+    
+    <h1>EMTA DOĞALGAZ & MÜHENDİSLİK</h1>
+    <div class="subtitle">Doğalgaz & Mühendislik Hizmetleri</div>
+    
+    <div class="dealer-badge">
+        <img src="vaillant-logo.png" alt="Vaillant" class="dealer-logo">
+        <span class="dealer-text">Gaziantep Şehitkamil Bayi</span>
+    </div>
+    
+    <div class="section-title">📍 İletişim & Ulaşım</div>
+    
+    <a href="tel:+905326005928" class="btn btn-call">📞 Yetkiliyi Ara</a>
+    
+    <a href="https://wa.me/905326005928?text=Merhaba,%20doğalgaz%20ve%20mühendislik%20hizmetleri%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-whatsapp">💬 WhatsApp'tan Yaz</a>
+    
+    <a href="https://maps.app.goo.gl/YzQ9YXnRxu6UVwtE6?g_st=ac" target="_blank" class="btn btn-maps">🗺️ Yol Tarifi / Konum</a>
+    
+    <div class="section-title">🌐 Dijital Kanallarımız</div>
+    
+    <a href="https://www.vaillantemtadogalgaz.com/" target="_blank" class="btn btn-web">Web Sitemiz</a>
+    
+    <div class="footer-wrapper">
+        <div class="legal-footer">© 2026 Emta Doğalgaz & Mühendislik</div>
+        <a href="#" target="_blank" class="creator-tag">Dijital Kart Tasarımı: <span>CK Plast</span></a>
+    </div>
+</div>
+
+</body>
+</html>
